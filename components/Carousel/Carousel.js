@@ -1,9 +1,17 @@
 class Carousel {
+    constructor(element){
+        this.element = element
+        console.log(this.element)
+        this.lButton = this.element.querySelector('.left-button')
+        this.rButton = this.element.querySelector('.right-button')
+        this.imgs =  this.element.dataset.pic
+        
+    }
 
 }
 
-let carousel = document.querySelector();
-
+let carousel = document.querySelector('.carousel');
+carousel.forEach(car => new Carousel())
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
     2. You will need to grab a reference to all of the images
@@ -12,3 +20,5 @@ let carousel = document.querySelector();
     5. Think of how you would animate this component. Make the cards slide in and out, or fade. It's up to you!
     6. Have fun!
 */
+
+
