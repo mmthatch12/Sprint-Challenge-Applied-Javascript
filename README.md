@@ -32,7 +32,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    The DOM is the Document Object Model. It is an interface that can be used to interact with the webpage and modify the webpage.
+
+
 2. What is an event?
+
+    An event an
 
 3. What is an event listener?
 
