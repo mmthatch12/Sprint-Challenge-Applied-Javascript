@@ -37,9 +37,11 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. What is an event?
 
-    An event an
+    An event an any trackable interaction a user has with a website. Common events are clicks, keystrikes, scrolls, moving the curser across the website, and so many more.
 
 3. What is an event listener?
+
+    An event listener is method that allows for the tracking or listening of an event 
 
 4. Why would we convert a NodeList into an Array?
 
