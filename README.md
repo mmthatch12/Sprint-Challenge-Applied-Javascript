@@ -41,11 +41,15 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is an event listener?
 
-    An event listener is method that allows for the tracking or listening of an event 
+    An event listener is a method that allows for the tracking or listening of an event and then allows for the modification of the site in some manner because that tracked event occured.
 
 4. Why would we convert a NodeList into an Array?
 
+    We would convert a NodeList into an array to give us access to many more array methods. 
+
 5. What is a component?
+
+    Components are building blocks that allow for reusable and repeatable blocks of HTML, CSS, and Javascript. 
 
 ### Git Set up
 
