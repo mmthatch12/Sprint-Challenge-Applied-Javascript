@@ -2,9 +2,10 @@ class TabLink {
   constructor(tabElement){
     // assign this.tabElement to the tabElement DOM reference
     this.tabElement = tabElement
+    console.log(this.tabElement)
     // Get the `data-tab` value from this.tabElement and store it here
     this.tabData = this.tabElement.dataset.tab
-    
+    console.log(this.tabData)
     // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
     
     //<- Delete this comment block when you work on the if statement
@@ -14,7 +15,7 @@ class TabLink {
       this.cards = document.querySelectorAll('.card')
     } else {
       // else if `all` is false, only select the cards with matching this.tabData values
-      this.cards = document.querySelector(`.card[data-tab"${this.tabData}"]`)
+      this.cards = document.querySelector(`.card[data-tab="${this.tabData}"]`)
     }
     //<- Delete this comment block when you work on the if statement
 
@@ -28,16 +29,16 @@ class TabLink {
   selectTab(){
 
     // Select all elements with the .tab class on them
-    const tabs = this.element.querySelectorAll('.tab');
+    const tabs = this.tabElement.querySelectorAll('.tab');
     
     // Iterate through the NodeList removing the .active-tab class from each element
-    tabs.forEach(tab => tab.classList.remove('active-tab'))
+    Array.from(tabs).forEach(tab => tab.classList.remove('active-tab'))
 
     // Select all of the elements with the .card class on them
     const cards = document.querySelectorAll('.card')
 
     // Iterate through the NodeList setting the display style each one to 'none'
-    cards.forEach(card => card.style.display = 'none')
+    Array.from(cards).forEach(card => card.style.display = 'none')
     
     // Add a class of ".active-tab" to this.tabElement
     this.tabElement.classList.add('active-tab')
@@ -70,3 +71,4 @@ class TabCard {
 */
 let tabs = document.querySelectorAll('.tab')
 tabs.forEach(tab => new TabLink(tab))
+console.log(tabs)
